@@ -2,7 +2,7 @@
 
 A kernel module for dumb firewalling.
 
-A `sysctl` variable is initialized but unused so far.
+A `sysctl` variable (as iptable) is initialized but unused so far.
 
 All packets are rejected by default.
 
@@ -12,7 +12,7 @@ All packets are rejected by default.
 
 # Run
 
-*WARNING* the rules need root rights to mount the module.
+*WARNING*: the rules need root rights to mount the module.
 
 `make run`
 
@@ -20,4 +20,4 @@ All packets are rejected by default.
 
 # Epilogue
 
-Simple sharing.
+Just old tests that I share.
