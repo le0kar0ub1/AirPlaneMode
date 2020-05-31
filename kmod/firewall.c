@@ -9,10 +9,10 @@
 #include <linux/tcp.h>
 #include <linux/udp.h>
 
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL3");
 MODULE_AUTHOR("Leo Karoubi");
-MODULE_DESCRIPTION("Module");
-MODULE_VERSION("0.0");
+MODULE_DESCRIPTION("Firewall");
+MODULE_VERSION("0");
 
 static struct nf_hook_ops *nfhook = NULL;
 
@@ -95,7 +95,7 @@ static int __init firewall_init(void)
 
 static void __exit firewall_exit(void)
 {
-    sysctl_exit_var();
+    // sysctl_exit_var();
     nf_unregister_net_hook(&init_net, nfhook);
     kfree(nfhook);
 }
